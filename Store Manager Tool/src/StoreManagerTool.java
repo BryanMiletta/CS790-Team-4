@@ -8,6 +8,9 @@ import javax.swing.*;
 
 
 public class StoreManagerTool {
+	//Fixed 3/12/2022: Added story capacity to be more in line with original 
+	// Prototype with strings instead of an actual GUI
+	public int storeCapacity = 200;
 	public static void main (String [] args) {
 		JFrame display = new JFrame ("Store Manager");
 		display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -23,11 +26,13 @@ public class StoreManagerTool {
 		JMenuItem Shopper = new JMenuItem("Shopper");
 		JMenuItem Manager = new JMenuItem("Manager");
 		JMenuItem About = new JMenuItem("About");
+		JMenuItem Help = new JMenuItem("Help");
 		menubar.add(menu1);
 		menubar.add(menu2);
 		menu1.add(Shopper);
 		menu1.add(Manager);
 		menu2.add(About);
+		menu2.add(Help);
 		
 		display.setJMenuBar(menubar);
 		display.pack();
