@@ -1,8 +1,11 @@
 // Created by Nicholas Marn, with help from Oracle Docs
+// Bryan checking git connection
+
 // https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
 // Copyleft, all wrongs reserved. 
 
 import java.awt.*;
+
 import java.awt.event.*;
 import javax.swing.*;
 
