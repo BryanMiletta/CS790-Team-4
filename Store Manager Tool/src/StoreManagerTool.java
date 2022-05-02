@@ -1,15 +1,16 @@
 // Created by Nicholas Marn, with help from Oracle Docs
-
-// Bryan checking git connection
-
 // https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
 // Copyleft, all wrongs reserved. 
+// Team 4 - Store Manager Tool
 
+//********************************** Import Libraries **********************************
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
+//********************************** END Import Libraries **********************************
 
 
+//********************************** StoreManagerTool Class **********************************
 public class StoreManagerTool {
 	//Fixed 3/12/2022: Added story capacity to be more in line with original 
 	// Prototype with strings instead of an actual GUI
@@ -54,3 +55,4 @@ public class StoreManagerTool {
 	//********************************** END MAIN **********************************
 	
 }
+//********************************** END StoreManagerClass **********************************
