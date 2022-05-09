@@ -74,6 +74,10 @@ public class StoreManagerTool {
 			cost = c;
 		}
 		//************************** End Constructor **************************
+		// TODO Example 
+		// Code to make new products - comments out for now
+		// StoreManagerTool apple = new StroeMangerTool("Apple", "Produce", 2.00);
+		
 	
 	
 		
