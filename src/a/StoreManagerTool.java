@@ -66,7 +66,7 @@ public class StoreManagerTool {
 	
 	// TODO sync Products class information with these menus
 	
-	// TODO syne StoreCapacity with hese menues
+	// TODO sync StoreCapacity with these menus
 		
 }
 //********************************** END StoreManagerClass **********************************
