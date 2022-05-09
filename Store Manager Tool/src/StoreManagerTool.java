@@ -54,5 +54,13 @@ public class StoreManagerTool {
 	}
 	//********************************** END MAIN **********************************
 	
+	//********************************** Bryan's Code **********************************
+	//********************************** Constructors for products **********************************
+	// This code layouts out an object constructor so that we can create a number of products for the app ordering feature.
+	// Object constucted = Product
+	// Fields: Name, Type, Cost
+	
+	
+	
 }
 //********************************** END StoreManagerClass **********************************
