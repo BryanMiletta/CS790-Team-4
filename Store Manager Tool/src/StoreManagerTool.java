@@ -6,6 +6,8 @@
 //********************************** Import Libraries **********************************
 import java.awt.*;
 import java.awt.event.*;
+import java.util.Stack;
+
 import javax.swing.*;
 //********************************** END Import Libraries **********************************
 
@@ -54,13 +56,27 @@ public class StoreManagerTool {
 	}
 	//********************************** END MAIN **********************************
 	
+	
 	//********************************** Bryan's Code **********************************
 	//********************************** Constructors for products **********************************
 	// This code layouts out an object constructor so that we can create a number of products for the app ordering feature.
 	// Object constucted = Product
 	// Fields: Name, Type, Cost
+	//************************** Constructor **************************
+		/**
+		 * Create a product
+		 */
+	// TODO We need to make a new class Product for this content.
+	// TODO change the name of method to Product after new class is created.
+		public StoreManagerTool(String n, String t, double c) {
+			name = n;
+			type = t;
+			cost = c;
+		}
+		//************************** End Constructor **************************
 	
 	
-	
+		
+		
 }
 //********************************** END StoreManagerClass **********************************
