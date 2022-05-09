@@ -9,6 +9,7 @@ import java.util.Stack;
  * @author bryan
  *
  */
+// This class is to support the store ordering features.
 public class Product {
 
 	// Bryan Miletta - Start
