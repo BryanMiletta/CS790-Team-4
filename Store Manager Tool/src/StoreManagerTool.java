@@ -1,4 +1,5 @@
 // Created by Nicholas Marn, with help from Oracle Docs
+// Comment sections / code organization created by Bryan Miletta
 // https://docs.oracle.com/javase/tutorial/uiswing/components/menu.html
 // Copyleft, all wrongs reserved. 
 // Team 4 - Store Manager Tool
@@ -38,6 +39,7 @@ public class StoreManagerTool {
 		JMenu menu2 = new JMenu ("About");
 		
 		// TODO: When run, have system load in shopper mode, using
+		
 		// JMenu to switch to manager mode
 		JMenuItem Shopper = new JMenuItem("Shopper");
 		JMenuItem Manager = new JMenuItem("Manager");
@@ -56,7 +58,7 @@ public class StoreManagerTool {
 	}
 	//********************************** END MAIN **********************************
 	
-	
+	// Bryan Miletta - Start
 	//********************************** Bryan's Code **********************************
 	//********************************** Constructors for products **********************************
 	// This code layouts out an object constructor so that we can create a number of products for the app ordering feature.
@@ -77,7 +79,7 @@ public class StoreManagerTool {
 		// TODO Example 
 		// Code to make new products - comments out for now
 		// StoreManagerTool apple = new StroeMangerTool("Apple", "Produce", 2.00);
-		
+	// Bryan Miletta - END
 	
 	
 		
