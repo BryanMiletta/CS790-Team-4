@@ -61,7 +61,12 @@ public class StoreManagerTool {
 		display.setVisible(true);
 	}
 	//********************************** END MAIN **********************************
-		
+	
+	//	// TODO make sure this information can be integrated to the main UI
+	
+	// TODO sync Products class information with these menus
+	
+	// TODO syne StoreCapacity with hese menues
 		
 }
 //********************************** END StoreManagerClass **********************************

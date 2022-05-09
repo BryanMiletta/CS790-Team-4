@@ -46,9 +46,9 @@ public class Product {
 	
 		// Bryan Miletta - END
 	
-	// Create an array of products 
+	// TODO Create an array of products 
 	
-	
+	// TODO make sure this information can be integrated to the main UI
 	
 	
 }
