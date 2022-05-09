@@ -43,8 +43,7 @@ public class Product {
 	Product banana = new Product("Banana", "Produce", 3.00);
 	Product juice = new Product("Juice", "Produce", 1.50);
 	Product watermellon = new Product("Watermellon", "Produce", 4.00);
-	
-		// Bryan Miletta - END
+	// Bryan Miletta - END
 	
 	// TODO Create an array of products 
 	

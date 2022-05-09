@@ -11,7 +11,7 @@ package a;
 // We will not implement a direct download/uploading working feature in this app, but rather simulate the data.
 
 public class StoreCapacity {
-	
+	// Bryan Miletta - Start
 	// constructor for person objects
 	// keeping track of each individual with an ID#
 	// age is tracked so we can use it to display data across as a child, adult, or senior as it relates to COVID safety 
@@ -30,7 +30,7 @@ public class StoreCapacity {
 		age = a;
 	}
 	//************************** End Constructor **************************
-			
+	// Bryan Miletta - END		
 			
 	// TODO create data structure to hold person object
 	
