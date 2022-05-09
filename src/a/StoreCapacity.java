@@ -12,8 +12,26 @@ package a;
 
 public class StoreCapacity {
 	
-	// TODO create constructor for person objects
-	
+	// constructor for person objects
+	// keeping track of each individual with an ID#
+	// age is tracked so we can use it to display data across as a child, adult, or senior as it relates to COVID safety 
+	//************************** Variables **************************
+	private int id;		
+	private int age;
+	private StoreCapacity[] peopleArray;
+	//************************** END Variables **************************	
+		
+	//************************** Constructor **************************
+	/**
+	 * Create a person
+	 */
+	public StoreCapacity(int i, int a) {
+		id = i;
+		age = a;
+	}
+	//************************** End Constructor **************************
+			
+			
 	// TODO create data structure to hold person object
 	
 	// TODO create rules / triggers around specific capacity limits
