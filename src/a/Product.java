@@ -20,7 +20,8 @@ public class Product {
 	//************************** Variables **************************
 		private String name;
 		private String type;
-		private double cost;		
+		private double cost;	
+		private Product[] productArray;
 	//************************** END Variables **************************	
 	
 	
@@ -43,6 +44,10 @@ public class Product {
 	Product watermellon = new Product("Watermellon", "Produce", 4.00);
 	
 		// Bryan Miletta - END
+	
+	// Create an array of products 
+	
+	
 	
 	
 }
