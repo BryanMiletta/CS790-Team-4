@@ -3,6 +3,10 @@
  */
 package a;
 
+import java.util.Stack;
+
+import edu.uwm.cs351.ps.Dictionary.Node;
+
 /**
  * @author bryan
  *
@@ -15,14 +19,21 @@ public class Product {
 		// This code layouts out an object constructor so that we can create a number of products for the app ordering feature.
 		// Object constucted = Product
 		// Fields: Name, Type, Cost
-		//************************** Constructor **************************
+	//************************** Variables **************************
+		private String name;
+		private String type;
+		private double cost;		
+	//************************** END Variables **************************	
+	
+	
+	//************************** Constructor **************************
 		/**
 		 * Create a product
 		 */
 		public Product(String n, String t, double c) {
-			String name = n;
-			String type = t;
-			double cost = c;
+			name = n;
+			type = t;
+			cost = c;
 		}
 		//************************** End Constructor **************************
 		
