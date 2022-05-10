@@ -38,6 +38,16 @@ public class StoreManagerTool {
 		JMenuBar menubar = new JMenuBar();
 		display.getContentPane().add(StoreName, BorderLayout.NORTH);
 		
+		//TODO: I imagine this will grow significantly, here's what will be needed
+		//1. Conditional Branching based on whether when enter is hit, to go in as a shopper
+		//2a. if in manager, check if credentials are valid
+		//2b. If shopper, we can do this one of two ways, just a
+		JPanel authenticateenter = new JPanel();
+		JButton authenticatebutton = new JButton("Enter");
+		authenticatebutton.setSize(100,100);
+		authenticatebutton.setVisible(true);
+		
+		
 		//********************************** Sub menus **********************************
 		JMenu menu1 = new JMenu ("User Mode");
 		JMenu menu2 = new JMenu ("About");
@@ -55,6 +65,8 @@ public class StoreManagerTool {
 		menu1.add(Manager);
 		menu2.add(About);
 		menu2.add(Help);
+		display.add(authenticateenter);
+		display.add(authenticatebutton);
 		
 		display.setJMenuBar(menubar);
 		display.pack();
@@ -69,4 +81,5 @@ public class StoreManagerTool {
 	// TODO sync StoreCapacity with these menus
 		
 }
+//********************************** END StoreManagerClass **********************************
 //********************************** END StoreManagerClass **********************************
