@@ -71,6 +71,31 @@ public class StoreManagerTool {
 		display.setJMenuBar(menubar);
 		display.pack();
 		display.setVisible(true);
+		//********************************** END sub menus **********************************
+		
+		
+		//********************************** Driving Code for Shopper **********************************
+		// TODO add content to drive menus for shopper.  To include:
+		// TODO displace the number of people in the store
+		// TODO See product list
+		// TODO add product list to shopping cart
+		// TODO Order
+		
+		
+		
+		//********************************** END Driving Code for Shopper **********************************
+		
+		
+		
+		
+		//********************************** Driving Code for Manager **********************************
+		// TODO add content to drive menus for shopper.  To include:
+		// TODO displace the number of people in the store
+		// TODO See product list
+
+		
+		//********************************** END Driving Code for Manager **********************************
+		
 	}
 	//********************************** END MAIN **********************************
 	//********************************* START POP-UP MENU ITEM *******************************
