@@ -8,7 +8,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 public class LoginDemo extends JFrame implements ActionListener {
-    JPanel panel;
+    // Add icon: https://www.flaticon.com/free-icon/grocery-cart_3081900 
+	
+	JPanel panel;
     JLabel user_label, password_label, message;
     JTextField userName_text;
     JPasswordField password_text;
@@ -62,6 +64,8 @@ public class LoginDemo extends JFrame implements ActionListener {
         else if (userName.trim().equals("User") && password.trim().equals("User")) {
             message.setText("Login Successful Hello " + userName + "");
         }
+        
+        
 // If the credentials are wrong then display Message
         else {
             message.setText(" Invalid Username or Password");
