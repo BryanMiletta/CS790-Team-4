@@ -73,7 +73,17 @@ public class StoreManagerTool {
 		display.setVisible(true);
 	}
 	//********************************** END MAIN **********************************
-	
+	//********************************* START POP-UP MENU ITEM *******************************
+	class Popup extends JFrame implements ActionListener {
+
+		@Override
+		public void actionPerformed(ActionEvent arg0) {
+			// TODO Auto-generated method stub
+			
+		}
+		
+	}
+	//********************************* END POP-UP *******************************
 	//	// TODO make sure this information can be integrated to the main UI
 	
 	// TODO sync Products class information with these menus
