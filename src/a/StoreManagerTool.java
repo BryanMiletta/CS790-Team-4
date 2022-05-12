@@ -90,6 +90,7 @@ public class StoreManagerTool {
 		display.setVisible(true);
 				
 		//********************************** Driving Code for Shopper **********************************
+		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
 		// TODO add content to drive menus for shopper.  To include:
 		JPanel capacity = new JPanel();
 		//TODO: Fix framing such that Username and Password are on different lines, with input box
@@ -101,9 +102,12 @@ public class StoreManagerTool {
 		JLabel capacityCurrent = new JLabel ("100");
 		JLabel capacityMax = new JLabel ("200");
 		
-		
+		// TODO add button to go to product list which includes option to add to cart		
+		// TODO need to add ActionListener to see if product button was selected on login.  If YES switch to this panel and flow
 		// TODO See product list
 		JLabel productList = new JLabel ("Currently the store has the following products avaiable for online ordering and pickup: ");
+		// TODO need to add ActionListener with button for add to cart
+		// TODO create an array to store add to cart items
 		
 		
 		// TODO add product list to shopping cart
@@ -121,6 +125,7 @@ public class StoreManagerTool {
 		
 		
 		//********************************** Driving Code for Manager **********************************
+		// TODO need to add ActionListener to see if Manager was selected on login.  If YES switch to this panel and flow
 		// TODO add content to drive menus for shopper.  To include:
 		// TODO displace the number of people in the store
 		// TODO See product list
