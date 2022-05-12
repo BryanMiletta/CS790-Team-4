@@ -40,10 +40,7 @@ public class StoreManagerTool {
 		//1. Conditional Branching based on whether when enter is hit, to go in as a shopper
 		//2a. if in manager, check if credentials are valid
 		//2b. If shopper, we can do this one of two ways, just a
-		JPanel authenticateenter = new JPanel();
-		JButton authenticatebutton = new JButton("Enter");
-		authenticatebutton.setPreferredSize(new Dimension (100, 100));
-		authenticatebutton.setVisible(true);
+		
 		
 		
 		//********************************** TOP Sub menus **********************************
@@ -68,8 +65,6 @@ public class StoreManagerTool {
 		JMenuItem Help = new JMenuItem("Help");
 		// Login flow
 		JLabel credentials = new JLabel ("Please Provide Credentials: ");
-		JLabel userName = new JLabel ("Username: ");
-		JLabel password = new JLabel ("Password: ");
 		
 		menubar.add(menu1);
 		menubar.add(menu2);
@@ -78,11 +73,8 @@ public class StoreManagerTool {
 		menu2.add(About);
 		menu2.add(Help);
 		login.add(credentials, credentials, 0);
-		login.add("/n", userName);
-		login.add("/n", password);
 		//login.add(credentials);
-		display.add(authenticateenter);
-		display.add(authenticatebutton);
+		
 		
 		display.setJMenuBar(menubar);
 		display.setContentPane(login);
@@ -95,6 +87,10 @@ public class StoreManagerTool {
 		JPanel capacity = new JPanel();
 		//TODO: Fix framing such that Username and Password are on different lines, with input box
 		login.setPreferredSize(new Dimension (400, 600));
+		
+		JLabel lblNewLabel = new JLabel("Welcome to the Store Manager Tool");
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
+		login.add(lblNewLabel);
 		login.setVisible(true);
 		// TODO displace the number of people in the store
 		// Capacity flow
