@@ -40,10 +40,7 @@ public class StoreManagerTool {
 		
 		
 		JMenuBar menubar = new JMenuBar();
-		//TODO: I imagine this will grow significantly, here's what will be needed
-		//1. Conditional Branching based on whether when enter is hit, to go in as a shopper
-		//2a. if in manager, check if credentials are valid
-		//2b. If shopper, we can do this one of two ways, just a
+		
 		
 		
 		
@@ -51,7 +48,6 @@ public class StoreManagerTool {
 		JMenu menu1 = new JMenu ("User Mode");
 		JMenu menu2 = new JMenu ("About");
 		
-		// TODO: When run, have system load in shopper mode, using
 		
 		
 		//********************************** END sub menus **********************************
@@ -99,9 +95,8 @@ public class StoreManagerTool {
 		display.pack();
 		display.setVisible(true);
 		
-		//********************************** Driving Code for Shopper **********************************
-		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
-		// TODO add content to drive menus for shopper.  To include:
+		
+		
 		JPanel capacity = new JPanel();
 		login.setPreferredSize(new Dimension (400, 600));
 		GridBagLayout gbl_login = new GridBagLayout();
@@ -162,6 +157,7 @@ public class StoreManagerTool {
 		gbc_btnNewButton.gridy = 4;
 		login.add(btnNewButton, gbc_btnNewButton);
 		login.setVisible(true);
+		
 		// TODO displace the number of people in the store
 		// Capacity flow
 		JLabel capacityText = new JLabel ("Currently the store is occupied by the following number of people: ");
@@ -228,5 +224,12 @@ public class StoreManagerTool {
 		}
 	}
 }
+//********************************** Driving Code for Shopper **********************************
+		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
+		// TODO add content to drive menus for shopper.  To include:
 
+
+//********************************** Driving Code for Shopper **********************************
+		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
+		// TODO add content to drive menus for shopper.  To include:
 //********************************** END StoreManagerClass **********************************
