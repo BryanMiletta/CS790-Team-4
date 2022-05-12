@@ -22,10 +22,11 @@ public class StoreManagerTool {
 	//Fixed 3/12/2022: Added story capacity to be more in line with original 
 	// Prototype with strings instead of an actual GUI
 	//********************************** Variables **********************************
-	public int storeCapacity = 200;
-	private static final Action action = new SwingAction();
-	private static JTextField textField;
+	public int storeCapacity = 200; // This is to be able to be amended by the Manager NJM 5/12/2022
+	private static final Action action = new SwingAction(); //DO NOT TOUCH ME, I create additional JFrames NJM 5/12
+	private static JTextField textField; // This is going 
 	private static JTextField textField_1;
+	private static final ButtonGroup Usermode = new ButtonGroup();
 	//********************************** END ariables **********************************
 	
 	//********************************** MAIN **********************************
@@ -57,8 +58,9 @@ public class StoreManagerTool {
 		
 		//********************************** Login Flow **********************************
 		JPanel login = new JPanel();
-		//TODO: Fix framing such that Username and Password are on different lines, with input box
-		login.setPreferredSize(new Dimension (400, 600));
+		//Fix framing such that Username and Password are on different lines, with input box
+		//Completed by NJM 5/12/2022
+		login.setPreferredSize(new Dimension (300, 500));
 		login.setVisible(true);
 		JMenuItem About = new JMenuItem("About");
 		About.setAction(action);
@@ -74,20 +76,20 @@ public class StoreManagerTool {
 				
 			}
 		});
-		JMenuItem Help = new JMenuItem("Help");
-		// Login flow
 		
 		
 		menubar.add(menu1);
 		
-		JCheckBoxMenuItem chckbxmntmNewCheckItem = new JCheckBoxMenuItem("Shopper");
-		menu1.add(chckbxmntmNewCheckItem);
+		JRadioButtonMenuItem rdbtnmntmNewRadioItem = new JRadioButtonMenuItem("Shopper");
+		rdbtnmntmNewRadioItem.setSelected(true);
+		Usermode.add(rdbtnmntmNewRadioItem);
+		menu1.add(rdbtnmntmNewRadioItem);
 		
-		JCheckBoxMenuItem chckbxmntmNewCheckItem_1 = new JCheckBoxMenuItem("Manager");
-		menu1.add(chckbxmntmNewCheckItem_1);
+		JRadioButtonMenuItem rdbtnmntmNewRadioItem_1 = new JRadioButtonMenuItem("Manager");
+		Usermode.add(rdbtnmntmNewRadioItem_1);
+		menu1.add(rdbtnmntmNewRadioItem_1);
 		menubar.add(menu2);
 		menu2.add(About);
-		menu2.add(Help);
 		
 		//login.add(credentials);
 		
@@ -96,7 +98,7 @@ public class StoreManagerTool {
 		display.setContentPane(login);
 		display.pack();
 		display.setVisible(true);
-				
+		
 		//********************************** Driving Code for Shopper **********************************
 		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
 		// TODO add content to drive menus for shopper.  To include:
@@ -213,14 +215,12 @@ public class StoreManagerTool {
 	private static class SwingAction extends AbstractAction {
 		public SwingAction() {
 			putValue(NAME, "About");
-			putValue(SHORT_DESCRIPTION, "Some short description");
+			putValue(SHORT_DESCRIPTION, "About the authors");
 		}
 		public void actionPerformed(ActionEvent e) {
 			JFrame about = new JFrame ("about");
-			about.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 			about.setPreferredSize(new Dimension (300,200));
-			JLabel aboutus = new JLabel ("The following is a Java Application created by Nicholas Marn, Bryan Miletta, Santhoshini Arkatala "
-					+ "and Kishan Raj VG for CS790");
+			JLabel aboutus = new JLabel ("The following is a Java Application created by:  Nicholas Marn, Bryan Miletta, Santhoshini Arkatala & Kishan Raj VG");
 			about.getContentPane().add(aboutus);
 			about.pack();
 			about.setVisible(true);
@@ -228,5 +228,5 @@ public class StoreManagerTool {
 		}
 	}
 }
-//********************************** END StoreManagerClass **********************************
+
 //********************************** END StoreManagerClass **********************************
