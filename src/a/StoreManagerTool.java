@@ -23,6 +23,7 @@ public class StoreManagerTool {
 	// Prototype with strings instead of an actual GUI
 	//********************************** Variables **********************************
 	public int storeCapacity = 200;
+	private static final Action action = new SwingAction();
 	//********************************** END ariables **********************************
 	
 	//********************************** MAIN **********************************
@@ -30,7 +31,7 @@ public class StoreManagerTool {
 		//********************************** Title **********************************
 		JFrame display = new JFrame ("Store Manager");
 		display.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		display.setPreferredSize(new Dimension (800,800));
+		display.setPreferredSize(new Dimension (400,600));
 		display.setVisible(true);
 		
 		
@@ -62,6 +63,19 @@ public class StoreManagerTool {
 		JMenuItem Shopper = new JMenuItem("Shopper");
 		JMenuItem Manager = new JMenuItem("Manager");
 		JMenuItem About = new JMenuItem("About");
+		About.setAction(action);
+		About.addMouseListener(new MouseAdapter() {
+			@Override
+			public void mouseClicked(MouseEvent e) {
+				JFrame about = new JFrame ("about");
+				about.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+				about.setPreferredSize(new Dimension (100,100));
+				about.setVisible(true);
+				about.pack();
+				about.setVisible(true);
+				
+			}
+		});
 		JMenuItem Help = new JMenuItem("Help");
 		// Login flow
 		JLabel credentials = new JLabel ("Please Provide Credentials: ");
@@ -142,6 +156,23 @@ public class StoreManagerTool {
 		
 	}
 	//********************************* END POP-UP *******************************		
+	private static class SwingAction extends AbstractAction {
+		public SwingAction() {
+			putValue(NAME, "About");
+			putValue(SHORT_DESCRIPTION, "Some short description");
+		}
+		public void actionPerformed(ActionEvent e) {
+			JFrame about = new JFrame ("about");
+			about.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			about.setPreferredSize(new Dimension (300,200));
+			JLabel aboutus = new JLabel ("The following is a Java Application created by Nicholas Marn, Bryan Miletta, Santhoshini Arkatala "
+					+ "and Kishan Raj VG for CS790");
+			about.add(aboutus);
+			about.pack();
+			about.setVisible(true);
+			
+		}
+	}
 }
 //********************************** END StoreManagerClass **********************************
 //********************************** END StoreManagerClass **********************************
