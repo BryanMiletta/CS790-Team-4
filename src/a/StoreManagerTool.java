@@ -145,13 +145,7 @@ public class StoreManagerTool {
 		}
 		
 	}
-	//********************************* END POP-UP *******************************
-	//	// TODO make sure this information can be integrated to the main UI
-	
-	// TODO sync Products class information with these menus
-	
-	// TODO sync StoreCapacity with these menus
-		
+	//********************************* END POP-UP *******************************		
 }
 //********************************** END StoreManagerClass **********************************
 //********************************** END StoreManagerClass **********************************
