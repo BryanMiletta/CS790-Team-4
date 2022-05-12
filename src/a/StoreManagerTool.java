@@ -58,10 +58,6 @@ public class StoreManagerTool {
 		//TODO: Fix framing such that Username and Password are on different lines, with input box
 		login.setPreferredSize(new Dimension (400, 600));
 		login.setVisible(true);
-		
-		// JMenu to switch to manager mode
-		JMenuItem Shopper = new JMenuItem("Shopper");
-		JMenuItem Manager = new JMenuItem("Manager");
 		JMenuItem About = new JMenuItem("About");
 		About.setAction(action);
 		About.addMouseListener(new MouseAdapter() {
@@ -81,9 +77,13 @@ public class StoreManagerTool {
 		JLabel credentials = new JLabel ("Please Provide Credentials: ");
 		
 		menubar.add(menu1);
+		
+		JCheckBoxMenuItem chckbxmntmNewCheckItem = new JCheckBoxMenuItem("Shopper");
+		menu1.add(chckbxmntmNewCheckItem);
+		
+		JCheckBoxMenuItem chckbxmntmNewCheckItem_1 = new JCheckBoxMenuItem("Manager");
+		menu1.add(chckbxmntmNewCheckItem_1);
 		menubar.add(menu2);
-		menu1.add(Shopper);
-		menu1.add(Manager);
 		menu2.add(About);
 		menu2.add(Help);
 		login.add(credentials, credentials, 0);
@@ -167,7 +167,7 @@ public class StoreManagerTool {
 			about.setPreferredSize(new Dimension (300,200));
 			JLabel aboutus = new JLabel ("The following is a Java Application created by Nicholas Marn, Bryan Miletta, Santhoshini Arkatala "
 					+ "and Kishan Raj VG for CS790");
-			about.add(aboutus);
+			about.getContentPane().add(aboutus);
 			about.pack();
 			about.setVisible(true);
 			
