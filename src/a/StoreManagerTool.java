@@ -24,6 +24,8 @@ public class StoreManagerTool {
 	//********************************** Variables **********************************
 	public int storeCapacity = 200;
 	private static final Action action = new SwingAction();
+	private static JTextField textField;
+	private static JTextField textField_1;
 	//********************************** END ariables **********************************
 	
 	//********************************** MAIN **********************************
@@ -74,7 +76,7 @@ public class StoreManagerTool {
 		});
 		JMenuItem Help = new JMenuItem("Help");
 		// Login flow
-		JLabel credentials = new JLabel ("Please Provide Credentials: ");
+		
 		
 		menubar.add(menu1);
 		
@@ -86,7 +88,7 @@ public class StoreManagerTool {
 		menubar.add(menu2);
 		menu2.add(About);
 		menu2.add(Help);
-		login.add(credentials, credentials, 0);
+		
 		//login.add(credentials);
 		
 		
@@ -99,12 +101,64 @@ public class StoreManagerTool {
 		// TODO need to add ActionListener to see if Shopper was selected on login.  If YES switch to this panel and flow
 		// TODO add content to drive menus for shopper.  To include:
 		JPanel capacity = new JPanel();
-		//TODO: Fix framing such that Username and Password are on different lines, with input box
 		login.setPreferredSize(new Dimension (400, 600));
+		GridBagLayout gbl_login = new GridBagLayout();
+		gbl_login.columnWidths = new int[]{76, 242, 0, 0};
+		gbl_login.rowHeights = new int[]{37, 0, 0, 80, 0, 0};
+		gbl_login.columnWeights = new double[]{0.0, 1.0, 0.0, Double.MIN_VALUE};
+		gbl_login.rowWeights = new double[]{0.0, 0.0, 0.0, 0.0, 0.0, Double.MIN_VALUE};
+		login.setLayout(gbl_login);
 		
 		JLabel lblNewLabel = new JLabel("Welcome to the Store Manager Tool");
 		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 18));
-		login.add(lblNewLabel);
+		GridBagConstraints gbc_lblNewLabel = new GridBagConstraints();
+		gbc_lblNewLabel.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel.anchor = GridBagConstraints.WEST;
+		gbc_lblNewLabel.fill = GridBagConstraints.VERTICAL;
+		gbc_lblNewLabel.gridx = 1;
+		gbc_lblNewLabel.gridy = 0;
+		login.add(lblNewLabel, gbc_lblNewLabel);
+		
+		JLabel lblNewLabel_1 = new JLabel("Username");
+		GridBagConstraints gbc_lblNewLabel_1 = new GridBagConstraints();
+		gbc_lblNewLabel_1.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel_1.anchor = GridBagConstraints.EAST;
+		gbc_lblNewLabel_1.gridx = 0;
+		gbc_lblNewLabel_1.gridy = 1;
+		login.add(lblNewLabel_1, gbc_lblNewLabel_1);
+		
+		textField = new JTextField();
+		GridBagConstraints gbc_textField = new GridBagConstraints();
+		gbc_textField.insets = new Insets(0, 0, 5, 5);
+		gbc_textField.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField.gridx = 1;
+		gbc_textField.gridy = 1;
+		login.add(textField, gbc_textField);
+		textField.setColumns(10);
+		
+		JLabel lblNewLabel_2 = new JLabel("Password");
+		GridBagConstraints gbc_lblNewLabel_2 = new GridBagConstraints();
+		gbc_lblNewLabel_2.anchor = GridBagConstraints.EAST;
+		gbc_lblNewLabel_2.insets = new Insets(0, 0, 5, 5);
+		gbc_lblNewLabel_2.gridx = 0;
+		gbc_lblNewLabel_2.gridy = 2;
+		login.add(lblNewLabel_2, gbc_lblNewLabel_2);
+		
+		textField_1 = new JTextField();
+		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
+		gbc_textField_1.insets = new Insets(0, 0, 5, 5);
+		gbc_textField_1.fill = GridBagConstraints.HORIZONTAL;
+		gbc_textField_1.gridx = 1;
+		gbc_textField_1.gridy = 2;
+		login.add(textField_1, gbc_textField_1);
+		textField_1.setColumns(10);
+		
+		JButton btnNewButton = new JButton("Enter");
+		GridBagConstraints gbc_btnNewButton = new GridBagConstraints();
+		gbc_btnNewButton.insets = new Insets(0, 0, 0, 5);
+		gbc_btnNewButton.gridx = 1;
+		gbc_btnNewButton.gridy = 4;
+		login.add(btnNewButton, gbc_btnNewButton);
 		login.setVisible(true);
 		// TODO displace the number of people in the store
 		// Capacity flow
