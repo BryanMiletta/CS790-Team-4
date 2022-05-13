@@ -102,7 +102,7 @@
                                     </h5>
                                     <div class="info-product-price">
                                         <input type="hidden" name="price" value="<%=retriveProduct.getString("price")%>"> 
-                                        <input type="hidden" name="mrp_price" value="<%=retriveProduct.getString("mrp_price")%>"> <span class="item_price"><%=retriveProduct.getString("price")%> Rs.</span>
+                                        <input type="hidden" name="mrp_price" value="<%=retriveProduct.getString("mrp_price")%>"> <span class="item_price"><%=retriveProduct.getString("price")%> $ </span>
                                         <del><%=retriveProduct.getString("mrp_price")%> Rs.</del>
                                     </div>
                                     <input type="submit" value="Add to cart" class="btn btn-warning" onclick="return confirm('Are you sure Do you want to add this item in cart?');">
