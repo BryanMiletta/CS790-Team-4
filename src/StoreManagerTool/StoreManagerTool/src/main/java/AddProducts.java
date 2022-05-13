@@ -22,7 +22,7 @@ import jakarta.servlet.http.HttpSession;
 public class AddProducts extends HttpServlet {
 
  //Path where all the images are stored
-    private final String UPLOAD_DIRECTORY = "C:\\Users\\Team4\\Documents\\NetBeansProjects\\OnlineShoppingSystem\\web\\uploads";
+    private final String UPLOAD_DIRECTORY = "C:\\Users\\Team 4\\Documents\\NetBeansProjects\\OnlineShoppingSystem\\web\\uploads";
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
@@ -43,7 +43,7 @@ public class AddProducts extends HttpServlet {
                 String status = null;
                 String category = null;
 
-                //SALTCHARS to generate unique code for product
+                // generate unique code for product
                 String SALTCHARS = "ABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
                 StringBuilder salt = new StringBuilder();
                 Random rnd = new Random();
