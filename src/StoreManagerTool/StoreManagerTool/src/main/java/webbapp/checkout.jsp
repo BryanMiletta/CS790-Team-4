@@ -94,9 +94,9 @@
                                 <th>SR.No</th>
                                 <th>Product</th>
                                 <th>Quantity</th>
-                                <th>MRP(Rs)</th>
-                                <th>Selling Price(Rs)</th>
-                                <th>Total Price(Rs)</th>
+                                <th>MRP$</th>
+                                <th>Selling Price $</th>
+                                <th>Total Price $</th>
                                 <th>Action</th>
                             </tr>
                         </thead>
@@ -124,10 +124,10 @@
                                     </div>
                                 </div>
                             </td>
-                            <td class="invert"><del><%=totalProduct.getString(4)%>&nbsp;Rs.
+                            <td class="invert"><del><%=totalProduct.getString(4)%>&nbsp;$.
                                 </del></td>
-                            <td class="invert"><%=totalProduct.getString(5)%>&nbsp;Rs.</td>
-                            <td class="invert"><%=totalProduct.getString(6)%>&nbsp;Rs.</td>
+                            <td class="invert"><%=totalProduct.getString(5)%>&nbsp;$.</td>
+                            <td class="invert"><%=totalProduct.getString(6)%>&nbsp;$.</td>
                             <td class="invert"><a
                                     href="removeProductFromCart.jsp?productId=<%=totalProduct.getInt(7)%>"
                                     onclick="return confirm('Are you sure you want to remove this item from cart?');"><i
