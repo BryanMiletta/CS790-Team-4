@@ -46,8 +46,8 @@
                                                     <th>Name</th>
                                                     <th>Image</th>
                                                     <th>Description</th>
-                                                    <th>MRP(Rs)</th>
-                                                    <th>Price (Rs)</th>
+                                                    <th>MRP($)</th>
+                                                    <th>Price ($)</th>
                                                     <th>Date</th>
                                                     <th>Status</th>
                                                     <th>Action</th>
